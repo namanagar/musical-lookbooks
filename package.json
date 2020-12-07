@@ -1,20 +1,30 @@
 {
-  "name": "lookbooks",
+  "name": "playlist-organizer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.5.0",
-    "@types/jest": "^26.0.16",
-    "@types/node": "^12.19.8",
-    "@types/react": "^16.14.2",
-    "@types/react-dom": "^16.9.10",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "typescript": "^4.1.2",
-    "web-vitals": "^0.2.4"
+    "auth0-js": "^9.13.2",
+    "autobind-decorator": "^2.4.0",
+    "bootstrap": "^4.3.1",
+    "dotenv": "^8.1.0",
+    "history": "^4.10.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^4.0.1",
+    "react-spotify-api": "^2.4.0",
+    "typescript": "3.6.3"
+  },
+  "devDependencies": {
+    "@types/auth0-js": "^9.10.6",
+    "@types/dotenv": "^6.1.1",
+    "@types/history": "^4.7.3",
+    "@types/jest": "24.0.18",
+    "@types/node": "^12.7.5",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.0",
+    "@types/react-router": "^5.0.3",
+    "@types/react-router-dom": "^4.3.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,10 +33,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
