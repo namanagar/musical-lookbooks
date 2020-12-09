@@ -77,20 +77,25 @@ class User extends Component<PlaylistProps> {
                         <SpotifyPlaylist id={this.props.id} options={{ limit: 10 }}>
                             {(playlist, loading, error) =>
                                 playlist ? (
-                                    <div>
-                                        <h4>{playlist.name} ({playlist.owner.display_name})</h4>
+                                    <div className="row">
+                                        <div className="col-sm-12 col-md-6">
+                                            <h4>{playlist.name} ({playlist.owner.display_name})</h4>
+                                                <img src={playlist.images[0].url} className='plimg' alt=""/>
+                                        </div>
+                                        <div className="col-sm-12 col-md-6">
                                             <TrackFeatures id={playlist.tracks.items.filter(Boolean).map(i => i.track.id)}>
                                                 {(features, loading, error) => (
                                                     features ? ( features.audio_features ? (
                                                         <div>
-                                                        <h1>tempo: {median(features.audio_features.filter(Boolean).map(f => f.tempo))}</h1>
-                                                        <h1>length: {msToTime(median(features.audio_features.filter(Boolean).map(f => f.duration_ms)))}</h1>
-                                                        <h1>key: {keyConverter(mode(features.audio_features.filter(Boolean).map(f => f.mode + ' ' + f.key )))}</h1>
-                                                        <h1>mood: {mood(median(features.audio_features.filter(Boolean).map(f => f.valence)))}</h1>
+                                                            <h1>tempo: {median(features.audio_features.filter(Boolean).map(f => f.tempo))}</h1>
+                                                            <h1>length: {msToTime(median(features.audio_features.filter(Boolean).map(f => f.duration_ms)))}</h1>
+                                                            <h1>key: {keyConverter(mode(features.audio_features.filter(Boolean).map(f => f.mode + ' ' + f.key )))}</h1>
+                                                            <h1>mood: {mood(median(features.audio_features.filter(Boolean).map(f => f.valence)))}</h1>
                                                         </div>
                                                     ) : null
                                                 ): null ) }
                                             </TrackFeatures>
+                                        </div>
                                     </div>
                                 ) : null
                             }

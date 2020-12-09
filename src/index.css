@@ -29,6 +29,18 @@ h1, h2, h3 {
   padding-top: 5vh;
 }
 
+.img-grid {
+  display: grid;
+  grid-gap: .1em;
+}
+
+.plimg {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  padding: 0.5em;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .logo {
     animation: logo-spin infinite 10s linear;
