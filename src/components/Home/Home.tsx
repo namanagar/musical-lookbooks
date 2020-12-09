@@ -1,7 +1,6 @@
 import autobind from 'autobind-decorator';
 import React, { Component } from 'react';
 import { Auth0Authentication } from '../../auth/Auth0Authentication';
-import { Nav } from '../';
 import { ReactComponent as LoginButton } from './login.svg';
 import logo from "../../logo.svg";
 
@@ -33,7 +32,7 @@ export default class Home extends Component<HomeProps, {}> {
                     <div>
                         {this.props.auth.accessToken && (
                             <div className="m-4">
-                                <h2>yo</h2>
+                                <h2>click on playlists y are u here</h2>
                             </div>
                         )}
                         <p>
