@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/musical-lookbooks/static/css/main.5e60e0d7.chunk.css",
-    "main.js": "/musical-lookbooks/static/js/main.d2477708.chunk.js",
-    "main.js.map": "/musical-lookbooks/static/js/main.d2477708.chunk.js.map",
+    "main.js": "/musical-lookbooks/static/js/main.a1e3aa99.chunk.js",
+    "main.js.map": "/musical-lookbooks/static/js/main.a1e3aa99.chunk.js.map",
     "runtime-main.js": "/musical-lookbooks/static/js/runtime-main.eae19a09.js",
     "runtime-main.js.map": "/musical-lookbooks/static/js/runtime-main.eae19a09.js.map",
     "static/css/2.95f25948.chunk.css": "/musical-lookbooks/static/css/2.95f25948.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.95f25948.chunk.css",
     "static/js/2.c38849b0.chunk.js",
     "static/css/main.5e60e0d7.chunk.css",
-    "static/js/main.d2477708.chunk.js"
+    "static/js/main.a1e3aa99.chunk.js"
   ]
 }
